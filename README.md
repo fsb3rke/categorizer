@@ -1,4 +1,4 @@
-# Categorize
+# Categorizer
 A tool for categorize to files into spesific folders
 
 # Usage
