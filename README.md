@@ -49,6 +49,20 @@ def move_file_to_directories(file_path: str, move_path: str)
 # file_path removing with os.remove() method.
 ```
 
+# Screenshots
+<details>
+           <summary>Show Categorizer</summary>
+           <p align="center">
+              <img src="https://github.com/fsb3rke/categorizer/blob/master/gitphoto/image0.png">
+           </p>
+</details>
+<details>
+           <summary>Show Categorizer's Power</summary>
+           <p align="center">
+              <img src="https://github.com/fsb3rke/categorizer/blob/master/gitphoto/image1.png">
+           </p>
+</details>
+
 # License
 Copyright (c) 2023 Berke Avcı (fsb3rke) \
 \
