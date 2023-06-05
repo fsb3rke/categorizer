@@ -1,5 +1,5 @@
 # Categorizer
-A tool for categorize to files into spesific folders
+A tool for categorize files into spesific folders
 
 # Usage
 Start with python
