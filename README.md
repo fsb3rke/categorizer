@@ -50,5 +50,6 @@ def move_file_to_directories(file_path: str, move_path: str)
 ```
 
 # License
-Copyright (c) 2023 Berke Avcı (fsb3rke)
+Copyright (c) 2023 Berke Avcı (fsb3rke) \
+\
 This software is released under the [MIT](https://choosealicense.com/licenses/mit/) License.
