@@ -64,7 +64,7 @@ def move_file_to_directories(file_path: str, move_path: str)
 </details>
 
 ## RoadMap
-- Add more extension type in data
+- Add more extension type for data
 
 ## License
 Copyright (c) 2023 Berke Avcı (fsb3rke) \
