@@ -1,13 +1,13 @@
 # Categorizer
 A tool for categorize files into spesific folders
 
-# Usage
+## Usage
 Start with python
 ```sh
 python categorizer/main.py
 ```
 
- # Installation
+ ## Installation
 Github to clone the project.
 ```sh
 git clone https://github.com/fsb3rke/categorizer.git
@@ -17,7 +17,7 @@ Python to start the project
 python categorizer/main.py
 ```
 
-# Data
+## Data
 | PDFs | IMAGES | DOCUMENTS | DATA | ARCHIVES | EXECUTABLES | MUSICS | VIDEOS |
 | ---- | ------ | --------- | ---- | -------- | ----------- | ------ | ------ |
 | pdf | png | doc | csv | zip | exe | mp3 | mp4 |
@@ -25,7 +25,7 @@ python categorizer/main.py
 | | jpeg | txt | | | | | flv |
 | | gif | | | | | | wmv
 
-# Methods
+## Methods
 [win.py]
 ```python
 def list_files(directory) -> list
@@ -49,7 +49,7 @@ def move_file_to_directories(file_path: str, move_path: str)
 # file_path removing with os.remove() method.
 ```
 
-# Screenshots
+## Screenshots
 <details>
            <summary>Show Categorizer</summary>
            <p align="center">
@@ -63,7 +63,10 @@ def move_file_to_directories(file_path: str, move_path: str)
            </p>
 </details>
 
-# License
+## RoadMap
+- Add more extension type in data
+
+## License
 Copyright (c) 2023 Berke Avcı (fsb3rke) \
 \
 This software is released under the [MIT](https://choosealicense.com/licenses/mit/) License.
