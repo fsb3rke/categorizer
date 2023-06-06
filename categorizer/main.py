@@ -1,6 +1,10 @@
 import os
 import win
 import time
+import platform
+
+# Splitter
+splitter = '\\' if platform.system() == "Windows" else '/'
 
 # Get Current Directory
 current_dir = os.getcwd()
@@ -26,15 +30,14 @@ file_list: list = win.list_files(current_dir)
 categorized_files: dict = win.set_categorize_files(file_list, current_dir)
 
 # Program starts here... no comment more.
-# TODO: Linux causes an error that is FileNotFoundError. Fix tomorrow.
 for directory_name in datas:
     categorized_file_list: list = categorized_files[directory_name]
     if categorized_file_list is []:
         continue
 
     for file in categorized_file_list:
-        file_name_n_ext = file.split('\\')[-1]
-        win.move_file_to_directories(file_path=file, move_path=os.path.join(categorizer_dir, f"{directory_name}\\{file_name_n_ext}"))
+        file_name_n_ext = file.split(splitter)[-1]
+        win.move_file_to_directories(file_path=file, move_path=os.path.join(categorizer_dir, f"{directory_name}{splitter}{file_name_n_ext}"))
         print(f"FILE({file_name_n_ext}) MOVED {current_dir}\n\t\tTO {os.path.join(categorizer_dir, directory_name)}", end="\n\n")
 
 # print(datas)
