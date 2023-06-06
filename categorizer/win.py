@@ -36,6 +36,7 @@ def set_categorize_files(file_list: list, directory) -> dict:
 def move_file_to_directories(file_path: str, move_path: str):
     # Read the file in binary mode and set the new file which as created on new path.
     # print(file_path, move_path, "PATHS IN MOVE_FILE_TO_DIRECTORIES")
+    # TODO: If file is empty, program returns FileNotFound 'cuz file could not write empty binary array.
     first_file_data = open(file_path, "rb").read()
     moved_file_data = open(move_path, "wb").write(first_file_data)
     os.remove(file_path)
