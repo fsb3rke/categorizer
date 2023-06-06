@@ -26,6 +26,7 @@ file_list: list = win.list_files(current_dir)
 categorized_files: dict = win.set_categorize_files(file_list, current_dir)
 
 # Program starts here... no comment more.
+# TODO: Linux causes an error that is FileNotFoundError. Fix tomorrow.
 for directory_name in datas:
     categorized_file_list: list = categorized_files[directory_name]
     if categorized_file_list is []:
