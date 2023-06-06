@@ -43,3 +43,6 @@ print("Thanks for using categorizer program.\nThis program was created by fsb3rk
 for i in range(2):
     print(f"This program will close after {2-i} second(s)", end="\r")
     time.sleep(1)
+    
+# Solve carriage return bug
+print(end="\r")
